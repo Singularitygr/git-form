@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="https://tests.fomenko.top/echo/index.php">
+        <p><b>Регистрация</b></p>
+        <p><input type="email" name="Email" placeholder="Email"></p>
+
+        <p><input type="password" name="password" placeholder="Пароль" required
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"></p>
+        <p><input type="password" name="password_confirmation" placeholder="Подтверждение пароля" required
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" onChange="isPasswordMatch();"></p>
+        <div id="divCheckPassword"></div>
+        <button name=" submit">
+            <strong>Отправить форму</strong>
+        </button>
+        <button name="reset">Сбросить форму</button>
+    </form>
+
+</body>
+
+</html>
