@@ -9,20 +9,19 @@
 </head>
 
 <body>
-    <form action="https://tests.fomenko.top/echo/index.php">
-        <p><b>Регистрация</b></p>
-        <p><input type="email" name="Email" placeholder="Email"></p>
-
-        <p><input type="password" name="password" placeholder="Пароль" required
-                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"></p>
-        <p><input type="password" name="password_confirmation" placeholder="Подтверждение пароля" required
-                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" onChange="isPasswordMatch();"></p>
-        <div id="divCheckPassword"></div>
-        <button name=" submit">
-            <strong>Отправить форму</strong>
-        </button>
-        <button name="reset">Сбросить форму</button>
-    </form>
+    <fieldset>
+        <form action="https://tests.fomenko.top/echo/index.php">
+            <p><b>Авторизация</b></p>
+            <p><label>Email<input type="email" name="Email" placeholder="Email"></label></p>
+            <p><label>Password<input type="password" name="password" placeholder="Пароль"></label></p>
+            <p><input type="checkbox" name="remember_password" value="remember_password"> Запомнить пароль
+                <a href="./registration.html">Регистрация</a>
+            <p><button name=" submit">Отправить форму</button>
+                <input type="reset">
+            </p>
+            <p></p>
+        </form>
+    </fieldset>
 
 </body>
 
