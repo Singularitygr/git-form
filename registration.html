@@ -11,29 +11,27 @@
 <body>
     <fieldset>
         <legend><b>Регистрация</b></legend>
-        <form action="https://tests.fomenko.top/echo/index.php">
-            <p>
-                <input type="email" name="Email" placeholder="Email">
-            </p>
-            <p>
-                <input type="password" name="password" placeholder="Пароль" required
+        <form action="https://tests.fomenko.top/echo/index.php" method="post">
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" name="Email" placeholder="Email">
+            </div>
+            <div>
+                <label for="passw">Пароль</label>
+                <input id="passw" type="password" name="password" placeholder="Пароль" required
                     pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
-            </p>
-            <p>
-                <input type="password" name="password_confirmation" placeholder="Подтверждение пароля" required
-                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" onChange="isPasswordMatch();">
-            </p>
-            <div id="divCheckPassword"></div>
-            <p>
-                <a href="./index.html">Авторизация</a>
-                <a href="./search.html">Поиск</a>
-            </p>
-            <button name=" submit">
-                <strong>Отправить форму</strong>
-            </button>
-            <button name="reset">Сбросить форму</button>
+            </div>
+            <div>
+                <label for="confpass">Подтверждение пароля</label>
+                <input id="confpass" type="password" name="password_confirmation" placeholder="Подтверждение пароля"
+                    required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" onChange="isPasswordMatch();">
+            </div>
+            <button type="submit"><b>Отправить форму</b></button>
+            <button type="reset">Сбросить форму</button>
         </form>
     </fieldset>
+    <a href="./index.html">Авторизация</a>
+    <a href="./search.html">Поиск</a>
 </body>
 
 </html>

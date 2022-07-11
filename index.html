@@ -11,18 +11,16 @@
 <body>
     <fieldset>
         <legend><b>Авторизация</b></legend>
-        <form action="https://tests.fomenko.top/echo/index.php">
-            <p><label>Email<input type="email" name="Email" placeholder="Email"></label></p>
-            <p><label>Password<input type="password" name="password" placeholder="Пароль"></label></p>
-            <p><input type="checkbox" name="remember_password" value="remember_password">Запомнить пароль</p>
-            <a href="./registration.html">Регистрация</a>
-            <a href="./search.html">Поиск</a>
-            <p><button name=" submit">Отправить форму</button>
-                <input type="reset">
-            </p>
+        <form action="https://tests.fomenko.top/echo/index.php" method="post">
+            <div><label>Email<input type="email" name="Email" placeholder="Email"></label></div>
+            <div><label>Password<input type="password" name="password" placeholder="Пароль"></label></div>
+            <div><input type="checkbox" name="remember_password" value="remember_password">Запомнить пароль</div>
+            <button type="submit">Отправить</button>
+            <button type="reset">Сброс</button>
         </form>
     </fieldset>
-
+    <a href="./registration.html">Регистрация</a>
+    <a href="./search.html">Поиск</a>
 </body>
 
 </html>
