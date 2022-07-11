@@ -9,98 +9,100 @@
 </head>
 
 <body>
+    <fieldset>
+        <legend><b>Поиск</b></legend>
+        <form action="https://tests.fomenko.top/echo/index.php">
+            <p>
+                <label for="type">Выберите тип кузова</label>
+                <select id="type" name="category_id">
+                    <option value="седан">Седан</option>
+                    <option value="универсал">Универсал</option>
+                    <option value="Хэтчбек">Хэтчбек</option>
+                    <option value="Купе">Купе</option>
+                </select>
+            </p>
+            <p>
+                <label for="mark">Марка авто</label>
+                <select id="mark" name="mark">
+                    <option value="1">Alfa Romeo</option>
+                    <option value="2">Cadillac</option>
+                    <option value="3">Chevrolet</option>
+                    <option value="4">Dodge</option>
+                    <option value="5">Ford</option>
+                    <option value="6">Honda</option>
+                    <option value="7">Lexus</option>
+                    <option value="8">Mercedes</option>
+                    <option value="9">Opel</option>
+                    <option value="10">BMW</option>
+                    <option value="11">Audi</option>
+                    <option value="12">Kia</option>
+                </select>
+            </p>
+            <p>
+                <label for="country">Страна производитель</label>
+                <select id="country" name="country">
+                    <option value="usa">США</option>
+                    <option value="germany">Германия</option>
+                    <option value="korea">Южная Корея</option>
+                    <option value="china">Китай</option>
+                    <option value="france">Франция</option>
+                </select>
+            </p>
+            <p>
+                <label for="price">Цена от до</label>
+                <input id="price" type="number" name="price_ot" min="0" placeholder="от">
+                <input type="number" name="price_do" min="0" placeholder="до">
+            </p>
+            <p><label for="year">Год выпуска</label>
+                <input id="year" type="number" name="god_ot" min="0" placeholder="от">
+                <input type="number" name="god_do" min="0" placeholder="до">
+            </p>
+            <p>
+                <label for="condition">Состояние</label>
+                <select id="condition" Name="condition" size="3" multiple>
+                    <option value="used">Б/У не требует вложения</option>
+                    <option value="fitted">Свежепригнанные</option>
+                    <option value="kredit">Возможен кредит</option>
+                    <option value="new">Новая из салона</option>
+                    <option value="needrepair">Требует ремонта</option>
+                    <option value="acc">После ДТП</option>
+                    <option value="spare">На запчасти</option>
+                    <option value="customs">Не растоможенные</option>
+                    <option value="docs">Проблемные документы</option>
+                </select>
+            </p>
+            <p>
+                <label for="fueltype">Выберите тип кузова</label>
+                <select id="fueltype" Name="fueltype">
+                    <option value="benz">Бензин</option>
+                    <option value="disel">Дизель</option>
+                    <option value="gas">Газ</option>
+                    <option value="electr">Электро</option>
+                    <option value="hybr">Гибрид</option>
+                </select>
+            </p>
+            <p>
+                <label for="gearbox">Коробка</label>
+                <select id="gearbox" Name="gearbox">
+                    <option value="mech">Механика</option>
+                    <option value="auto">Автомат</option>
+                </select>
+            </p>
+            <p>
+                <label for="color">Цвет кузова</label>
+                <select id="color" Name="color">
+                    <option value="mech">Черный</option>
+                    <option value="mech">Белый</option>
+                    <option value="mech">Красный</option>
+                    <option value="mech">Синий</option>
+                </select>
+            </p>
+            <button name=" submit">Отправить форму</button>
+            <input type="reset">
+        </form>
+    </fieldset>
     <a href="./registration.html">Регистрация</a>
     <a href="./index.html">Авторизация</a>
-    <form action="https://tests.fomenko.top/echo/index.php">
-        <div>
-            <label for="type">Выберите тип кузова</label>
-            <select id="type" name="category_id">
-                <option value="седан">Седан</option>
-                <option value="универсал">Универсал</option>
-                <option value="Хэтчбек">Хэтчбек</option>
-                <option value="Купе">Купе</option>
-            </select>
-        </div>
-        <div>
-            <label for="mark">Марка авто</label>
-            <select id="mark" name="mark">
-                <option value="1">Alfa Romeo</option>
-                <option value="2">Cadillac</option>
-                <option value="3">Chevrolet</option>
-                <option value="4">Dodge</option>
-                <option value="5">Ford</option>
-                <option value="6">Honda</option>
-                <option value="7">Lexus</option>
-                <option value="8">Mercedes</option>
-                <option value="9">Opel</option>
-                <option value="10">BMW</option>
-                <option value="11">Audi</option>
-                <option value="12">Kia</option>
-            </select>
-        </div>
-        <div>
-            <label for="country">Страна производитель</label>
-            <select id="country" name="country">
-                <option value="usa">США</option>
-                <option value="germany">Германия</option>
-                <option value="korea">Южная Корея</option>
-                <option value="china">Китай</option>
-                <option value="france">Франция</option>
-            </select>
-        </div>
-        <div>
-            <label for="price">Цена от до</label>
-            <input id="price" type="number" name="price_ot" min="0" placeholder="от">
-            <input type="number" name="price_do" min="0" placeholder="до">
-        </div>
-        <div><label for="year">Год выпуска</label>
-            <input id="year" type="number" name="god_ot" min="0" placeholder="от">
-            <input type="number" name="god_do" min="0" placeholder="до">
-        </div>
-        <div>
-            <label for="condition">Состояние</label>
-            <select id="condition" Name="condition" size="3" multiple>
-                <option value="used">Б/У не требует вложения</option>
-                <option value="fitted">Свежепригнанные</option>
-                <option value="kredit">Возможен кредит</option>
-                <option value="new">Новая из салона</option>
-                <option value="needrepair">Требует ремонта</option>
-                <option value="acc">После ДТП</option>
-                <option value="spare">На запчасти</option>
-                <option value="customs">Не растоможенные</option>
-                <option value="docs">Проблемные документы</option>
-            </select>
-        </div>
-        <div>
-            <label for="fueltype">Выберите тип кузова</label>
-            <select id="fueltype" Name="fueltype">
-                <option value="benz">Бензин</option>
-                <option value="disel">Дизель</option>
-                <option value="gas">Газ</option>
-                <option value="electr">Электро</option>
-                <option value="hybr">Гибрид</option>
-            </select>
-        </div>
-        <div>
-            <label for="gearbox">Коробка</label>
-            <select id="gearbox" Name="gearbox">
-                <option value="mech">Механика</option>
-                <option value="auto">Автомат</option>
-            </select>
-        </div>
-        <div>
-            <label for="color">Цвет кузова</label>
-            <select id="color" Name="color" type="color">
-                <option value="mech">Черный</option>
-                <option value="mech">Белый</option>
-                <option value="mech">Красный</option>
-                <option value="mech">Синий</option>
-            </select>
-        </div>
-        <button name=" submit">Отправить форму</button>
-        <input type="reset">
-
-    </form>
 </body>
 
 </html>
