@@ -10,9 +10,24 @@
 
 <body>
     <form action="https://tests.fomenko.top/echo/index.php">
-        <select name="тип кузова">
-            <option>Выберите тип кузова</option>
+        <label for="type">Выберите тип кузова</label>
+        <select id="type" name="category_id">
             <option value="седан">Седан</option>
+            <option value="универсал">Универсал</option>
+            <option value="Хэтчбек">Хэтчбек</option>
+            <option value="Купе">Купе</option>
+        </select>
+        <select name="марка авто">
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="kia">Kia</option>
+        </select>
+        <select name="Страна производитель">
+            <option value="usa">США</option>
+            <option value="germany">Германия</option>
+            <option value="korea">Корея</option>
+        </select>
+    </form>
 </body>
 
 </html>
