@@ -9,18 +9,28 @@
 </head>
 
 <body>
-    <fieldset>
+    <form action="https://tests.fomenko.top/echo/index.php" method="post">
         <legend><b>Авторизация</b></legend>
-        <form action="https://tests.fomenko.top/echo/index.php" method="post">
-            <div><label>Email<input type="email" name="Email" placeholder="Email"></label></div>
-            <div><label>Password<input type="password" name="password" placeholder="Пароль"></label></div>
-            <div><input type="checkbox" name="remember_password" value="remember_password">Запомнить пароль</div>
-            <button type="submit">Отправить</button>
-            <button type="reset">Сброс</button>
-        </form>
-    </fieldset>
-    <a href="./registration.html">Регистрация</a>
-    <a href="./search.html">Поиск</a>
+        <fieldset>
+            <div>
+                <label>Email<input type="email" name="email" placeholder="Email"></label>
+            </div>
+            <div>
+                <label>Password<input type="password" name="password" placeholder="Пароль"></label>
+            </div>
+            <div>
+                <input type="checkbox" name="remember_password" value="remember_password">Запомнить пароль
+            </div>
+            <div>
+                <button type="submit">Отправить</button>
+                <button type="reset">Сброс</button>
+            </div>
+        </fieldset>
+    </form>
+    <div>
+        <a href="./registration.html">Регистрация</a>
+        <a href="./search.html">Поиск</a>
+    </div>
 </body>
 
 </html>
